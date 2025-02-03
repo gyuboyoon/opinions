@@ -2,16 +2,16 @@
   "opinions": [
     {
       "id": 1,
-      "userName": "Maximilian Schwarzmüller",
-      "title": "Do yourself a favor and learn React!",
-      "body": "React is an amazing JavaScript library!\n\nDespite all it's shortcomings.",
+      "userName": "윤테이",
+      "title": "스스로를 위해 React를 배워봐!",
+      "body": "리액트는 굉장한 자바스크립트 라이브러리다!!\n\n우와와아!!!",
       "votes": 0
     },
     {
       "id": 2,
-      "userName": "Maximilian Schwarzmüller",
-      "title": "React has more depth than you might first think!",
-      "body": "React is a great library to learn, but it's not just about the basics. Dive deeper!\nFor example with this course!",
+      "userName": "김딜런",
+      "title": "리액트는 처음 생각했던 것 보다 훨씬 재밌어!",
+      "body": "리액트는 멋진 라이브러리야!!,\n 하지만 기본만 아는 것으로는 충분하지 않아요.\n 더 깊이 공부해보자!",
       "votes": 0
     }
   ]
