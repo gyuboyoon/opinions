@@ -1,7 +1,14 @@
-import { useActionState } from "react";
+import { useFormStatus } from "react-dom";
+import { useActionState, use } from "react";
+
+import { OpinionsContext } from "../store/opinions-context";
+import Submit from "./Submit.jsx";
 
 export function NewOpinion() {
-  function shareOpinionAction(prevState, formData) {
+  const { addOpinion } = use(OpinionsContext);
+  // use훅은 리액트 19 이상에서 사용가능하며, 일부 컨텍스트에 접근하는 데 사용할 수 있다.
+
+  async function shareOpinionAction(prevState, formData) {
     const title = formData.get("title");
     const body = formData.get("body");
     const userName = formData.get("userName");
@@ -31,6 +38,7 @@ export function NewOpinion() {
       };
     }
 
+    await addOpinion({ title, body, userName });
     return { errors: null };
   }
 
@@ -81,9 +89,7 @@ export function NewOpinion() {
           </ul>
         )}
 
-        <p className="actions">
-          <button type="submit">Submit</button>
-        </p>
+        <Submit />
       </form>
     </div>
   );
